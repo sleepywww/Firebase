@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/btnInsert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnInsert"
+        app:layout_constraintTop_toBottomOf="@+id/btnGet" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Get"
+        app:layout_constraintEnd_toEndOf="@+id/btnInsert"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnInsert"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Insert"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/login"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="285dp" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInsert"
+        app:layout_constraintStart_toEndOf="@+id/btnInsert"
+        app:layout_constraintTop_toTopOf="@+id/btnInsert"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="@+id/txtId"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete"
+        app:layout_constraintVertical_bias="0.586" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
